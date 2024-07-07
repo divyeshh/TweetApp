@@ -1,0 +1,825 @@
+2022-12-30 00:32:47.462  INFO 27344 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 11.0.15.1 on LAPTOP-MCA2PCCR with PID 27344 (C:\Users\Divyesh\Desktop\TweetAppComponent2\TweetAppBackend\TweetAppBackend\target\classes started by Divyesh in C:\Users\Divyesh\Desktop\TweetAppComponent2\TweetAppBackend\TweetAppBackend)
+2022-12-30 00:32:47.506 DEBUG 27344 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-12-30 00:32:47.508  INFO 27344 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2022-12-30 00:32:47.732  INFO 27344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-30 00:32:47.733  INFO 27344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-30 00:32:53.756  INFO 27344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-12-30 00:32:53.892  INFO 27344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 2 MongoDB repository interfaces.
+2022-12-30 00:32:57.605  INFO 27344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-12-30 00:32:57.620  INFO 27344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30 00:32:57.621  INFO 27344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-12-30 00:32:57.918  INFO 27344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30 00:32:57.919  INFO 27344 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10180 ms
+2022-12-30 00:32:58.789 DEBUG 27344 --- [restartedMain] TFilter$$EnhancerBySpringCGLIB$$a02a71ea : Filter 'JWTFilter' configured for use
+2022-12-30 00:33:00.629  INFO 27344 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=tweet.lynu3ly.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-mzenc9-shard-0'}
+2022-12-30 00:33:01.689  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 00:33:01.731  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 00:33:01.734  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 00:33:02.423  INFO 27344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-30 00:33:03.725  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:74840}] to ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017
+2022-12-30 00:33:03.725  INFO 27344 --- [cluster-rtt-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:74840}] to ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017
+2022-12-30 00:33:03.726  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:88826}] to ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 00:33:03.726  INFO 27344 --- [cluster-rtt-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:88806}] to ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 00:33:03.726  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:72197}] to ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017
+2022-12-30 00:33:03.726  INFO 27344 --- [cluster-rtt-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:72195}] to ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017
+2022-12-30 00:33:03.727  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=954004900, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63aa6cb2f979dad960aab8fa, counter=4}, lastWriteDate=Fri Dec 30 00:33:03 IST 2022, lastUpdateTimeNanos=991424678685900}
+2022-12-30 00:33:03.727  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=955211300, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000012f, setVersion=6, topologyVersion=TopologyVersion{processId=63aa700c6e5facad1fd63bb4, counter=6}, lastWriteDate=Fri Dec 30 00:33:03 IST 2022, lastUpdateTimeNanos=991424678694000}
+2022-12-30 00:33:03.727  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=955032500, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63aa72deb63d448566c96dac, counter=3}, lastWriteDate=Fri Dec 30 00:33:03 IST 2022, lastUpdateTimeNanos=991424679078500}
+2022-12-30 00:33:03.730  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff000000000000012f from replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 00:33:03.730  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max set version to 6 from replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 00:33:03.731  INFO 27344 --- [cluster-ClusterId{value='63ade464174ff404a5adc48e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 00:33:03.961  INFO 27344 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-12-30 00:33:04.336  INFO 27344 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-30 00:33:04.725  INFO 27344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-12-30 00:33:04.727  INFO 27344 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-12-30 00:33:04.749  INFO 27344 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-12-30 00:33:04.765  INFO 27344 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-12-30 00:33:05.225  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-12-30 00:33:05.229  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-12-30 00:33:05.233  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-12-30 00:33:05.238  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-12-30 00:33:05.242  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-12-30 00:33:05.245  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-12-30 00:33:05.249  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-12-30 00:33:05.255  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-12-30 00:33:05.261  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-12-30 00:33:05.264  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-12-30 00:33:05.270  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-12-30 00:33:05.273  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-12-30 00:33:05.278  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-12-30 00:33:05.286  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-12-30 00:33:05.290  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-12-30 00:33:05.294  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-12-30 00:33:05.297  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-12-30 00:33:05.302  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-12-30 00:33:05.308  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-12-30 00:33:05.311  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-12-30 00:33:05.316  INFO 27344 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2022-12-30 00:33:05.800  INFO 27344 --- [restartedMain] com.tweetapp.api.TweetApplication        : Started TweetApplication in 20.508 seconds (JVM running for 23.53)
+2022-12-30 00:35:36.738  INFO 27344 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-30 00:35:36.739  INFO 27344 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-30 00:35:36.742  INFO 27344 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-30 00:35:36.967 DEBUG 27344 --- [http-nio-8090-exec-1] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-12-30 00:35:36.967 DEBUG 27344 --- [http-nio-8090-exec-1] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-12-30 00:35:38.339  INFO 27344 --- [http-nio-8090-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:88885}] to ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 00:35:38.390  INFO 27344 --- [http-nio-8090-exec-1] c.tweetapp.api.service.UserServiceImpl   : Login failed
+2022-12-30 00:35:38.846  WARN 27344 --- [http-nio-8090-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [400] milliseconds.
+2022-12-30 00:35:48.099 DEBUG 27344 --- [http-nio-8090-exec-4] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-12-30 00:35:48.100 DEBUG 27344 --- [http-nio-8090-exec-4] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-12-30 00:35:48.140  INFO 27344 --- [http-nio-8090-exec-4] c.tweetapp.api.service.UserServiceImpl   : Login failed
+2022-12-30 00:35:58.925 DEBUG 27344 --- [http-nio-8090-exec-7] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-12-30 00:35:58.925 DEBUG 27344 --- [http-nio-8090-exec-7] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-12-30 00:35:59.147  INFO 27344 --- [http-nio-8090-exec-7] c.tweetapp.api.service.UserServiceImpl   : divyesh22--Logged in Successfully..!
+2022-12-30 00:35:59.208  INFO 27344 --- [http-nio-8090-exec-9] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-12-30 00:35:59.209  INFO 27344 --- [http-nio-8090-exec-9] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-12-30 00:42:47.287  INFO 27344 --- [http-nio-8090-exec-3] c.t.api.controller.TweetAppController    : Retrived all the users
+2022-12-30 00:42:47.288  INFO 27344 --- [http-nio-8090-exec-3] c.tweetapp.api.service.UserServiceImpl   : Retriving all the users
+2022-12-30 00:43:23.576  INFO 27344 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-30 00:43:23.670  INFO 27344 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:7, serverValue:88885}] to ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017 because the pool has been closed.
+2022-12-30 12:49:21.739  INFO 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 11.0.15.1 on LAPTOP-MCA2PCCR with PID 22384 (C:\Users\Divyesh\Desktop\TweetAppComponent2\TweetAppBackend\TweetAppBackend\target\classes started by Divyesh in C:\Users\Divyesh\Desktop\TweetAppComponent2\TweetAppBackend\TweetAppBackend)
+2022-12-30 12:49:21.752 DEBUG 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-12-30 12:49:21.753  INFO 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2022-12-30 12:49:21.884  INFO 22384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-30 12:49:21.885  INFO 22384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-30 12:49:24.701  INFO 22384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-12-30 12:49:24.883  INFO 22384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176 ms. Found 2 MongoDB repository interfaces.
+2022-12-30 12:49:37.806  INFO 22384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-12-30 12:49:38.160  INFO 22384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30 12:49:38.161  INFO 22384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-12-30 12:49:38.746  INFO 22384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30 12:49:38.747  INFO 22384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 16860 ms
+2022-12-30 12:49:39.380 DEBUG 22384 --- [restartedMain] TFilter$$EnhancerBySpringCGLIB$$8524a8f0 : Filter 'JWTFilter' configured for use
+2022-12-30 12:49:42.763  INFO 22384 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=tweet.lynu3ly.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-mzenc9-shard-0'}
+2022-12-30 12:49:43.909  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 12:49:44.070  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 12:49:44.072  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 12:49:45.288  INFO 22384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-30 12:49:48.521  INFO 22384 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-12-30 12:49:48.955  INFO 22384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-30 12:49:48.997  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:86354}] to ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017
+2022-12-30 12:49:48.997  INFO 22384 --- [cluster-rtt-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:117703}] to ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 12:49:48.997  INFO 22384 --- [cluster-rtt-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:86348}] to ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017
+2022-12-30 12:49:48.997  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:83671}] to ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017
+2022-12-30 12:49:48.997  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:117729}] to ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 12:49:48.998  INFO 22384 --- [cluster-rtt-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:83672}] to ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017
+2022-12-30 12:49:48.999  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=880448100, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63aa6cb2f979dad960aab8fa, counter=4}, lastWriteDate=Fri Dec 30 12:49:48 IST 2022, lastUpdateTimeNanos=1035648657000300}
+2022-12-30 12:49:49.000  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=594749000, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63aa72deb63d448566c96dac, counter=3}, lastWriteDate=Fri Dec 30 12:49:48 IST 2022, lastUpdateTimeNanos=1035648657000500}
+2022-12-30 12:49:49.002  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=885589100, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000012f, setVersion=6, topologyVersion=TopologyVersion{processId=63aa700c6e5facad1fd63bb4, counter=6}, lastWriteDate=Fri Dec 30 12:49:48 IST 2022, lastUpdateTimeNanos=1035648657005900}
+2022-12-30 12:49:49.010  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff000000000000012f from replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 12:49:49.012  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max set version to 6 from replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 12:49:49.012  INFO 22384 --- [cluster-ClusterId{value='63ae910ee16dca6f87696a9c', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 12:49:49.489  INFO 22384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-12-30 12:49:49.491  INFO 22384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-12-30 12:49:49.566  INFO 22384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-12-30 12:49:49.599  INFO 22384 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-12-30 12:49:50.038  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-12-30 12:49:50.044  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-12-30 12:49:50.047  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-12-30 12:49:50.050  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-12-30 12:49:50.054  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-12-30 12:49:50.060  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-12-30 12:49:50.064  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-12-30 12:49:50.068  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-12-30 12:49:50.080  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-12-30 12:49:50.087  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-12-30 12:49:50.099  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-12-30 12:49:50.111  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-12-30 12:49:50.126  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-12-30 12:49:50.130  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-12-30 12:49:50.133  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-12-30 12:49:50.143  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-12-30 12:49:50.156  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-12-30 12:49:50.171  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-12-30 12:49:50.180  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-12-30 12:49:50.197  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-12-30 12:49:50.201  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2022-12-30 12:49:50.543  INFO 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : Started TweetApplication in 30.668 seconds (JVM running for 33.792)
+2022-12-30 13:22:46.574  INFO 22384 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-30 13:22:51.718 DEBUG 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : ===========> Tweet App Started <===========
+2022-12-30 13:22:57.872  INFO 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 11.0.15.1 on LAPTOP-MCA2PCCR with PID 22384 (C:\Users\Divyesh\Desktop\TweetAppComponent2\TweetAppBackend\TweetAppBackend\target\classes started by Divyesh in C:\Users\Divyesh\Desktop\TweetAppComponent2\TweetAppBackend\TweetAppBackend)
+2022-12-30 13:22:57.873 DEBUG 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-12-30 13:22:57.873  INFO 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2022-12-30 13:22:58.765  INFO 22384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-12-30 13:22:58.791  INFO 22384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 2 MongoDB repository interfaces.
+2022-12-30 13:22:58.960  INFO 22384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-12-30 13:22:58.961  INFO 22384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30 13:22:58.962  INFO 22384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-12-30 13:22:59.024  INFO 22384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30 13:22:59.024  INFO 22384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1146 ms
+2022-12-30 13:22:59.098 DEBUG 22384 --- [restartedMain] TFilter$$EnhancerBySpringCGLIB$$8524a8f0 : Filter 'JWTFilter' configured for use
+2022-12-30 13:23:00.148  INFO 22384 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=tweet.lynu3ly.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-mzenc9-shard-0'}
+2022-12-30 13:23:01.255  INFO 22384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-30 13:23:01.277  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 13:23:01.282  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 13:23:01.293  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 13:23:01.604  INFO 22384 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-12-30 13:23:01.611  INFO 22384 --- [cluster-rtt-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:10, serverValue:84609}] to ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:01.628  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:9, serverValue:84609}] to ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:01.634  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=171208900, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63aa72deb63d448566c96dac, counter=3}, lastWriteDate=Fri Dec 30 13:23:01 IST 2022, lastUpdateTimeNanos=1037641290906900}
+2022-12-30 13:23:01.713  INFO 22384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-30 13:23:01.818  INFO 22384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-12-30 13:23:01.819  INFO 22384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-12-30 13:23:01.820  INFO 22384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-12-30 13:23:01.824  INFO 22384 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-12-30 13:23:01.832  INFO 22384 --- [cluster-rtt-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:14, serverValue:87301}] to ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:01.833  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:11, serverValue:87301}] to ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:01.834  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=142013700, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63aa6cb2f979dad960aab8fa, counter=4}, lastWriteDate=Fri Dec 30 13:23:01 IST 2022, lastUpdateTimeNanos=1037641496142200}
+2022-12-30 13:23:01.901  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-12-30 13:23:01.906  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-12-30 13:23:01.909  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-12-30 13:23:01.911  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-12-30 13:23:01.915  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-12-30 13:23:01.918  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-12-30 13:23:01.921  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-12-30 13:23:01.924  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-12-30 13:23:01.928  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-12-30 13:23:01.930  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-12-30 13:23:01.933  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-12-30 13:23:01.936  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-12-30 13:23:01.946  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-12-30 13:23:01.950  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-12-30 13:23:01.954  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-12-30 13:23:01.959  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-12-30 13:23:01.963  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-12-30 13:23:01.966  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-12-30 13:23:01.974  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-12-30 13:23:01.976  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-12-30 13:23:01.978  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2022-12-30 13:23:02.160  INFO 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : Started TweetApplication in 4.352 seconds (JVM running for 2025.409)
+2022-12-30 13:23:02.168  INFO 22384 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.auditevents.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.beans.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration#beansEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.beans.BeansEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CachesEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.caches.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConditionsReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.conditions.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConditionsReportEndpointAutoConfiguration#conditionsReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.autoconfigure.condition.ConditionsReportEndpoint; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.configprops.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   EnvironmentEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.env.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HeapDumpWebEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.heapdump.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   HeapDumpWebEndpointAutoConfiguration#heapDumpWebEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.management.HeapDumpWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpTraceEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.httptrace.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LogFileWebEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.logfile.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name ./TweetLogs.log (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LoggersEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.loggers.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LoggersEndpointAutoConfiguration#loggersEndpoint matched:
+      - Logging System enabled (LoggersEndpointAutoConfiguration.OnEnabledLoggingSystemCondition)
+      - @ConditionalOnBean (types: org.springframework.boot.logging.LoggingSystem; SearchStrategy: all) found bean 'springBootLoggingSystem'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LoggersEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MappingsEndpointAutoConfiguration#mappingsEndpoint matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.mappings.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MetricsEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.micrometer.core.annotation.Timed' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.metrics.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MetricsEndpointAutoConfiguration#metricsEndpoint matched:
+      - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found bean 'prometheusMeterRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.metrics.MetricsEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PrometheusMetricsExportAutoConfiguration.PrometheusScrapeEndpointConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.prometheus.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   PrometheusMetricsExportAutoConfiguration.PrometheusScrapeEndpointConfiguration#prometheusEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.metrics.export.prometheus.PrometheusScrapeEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ScheduledTasksEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.scheduledtasks.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ScheduledTasksEndpointAutoConfiguration#scheduledTasksEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.scheduling.ScheduledTasksEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ThreadDumpEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint no property management.endpoint.threaddump.enabled found so using endpoint default; @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ThreadDumpEndpointAutoConfiguration#dumpEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.management.ThreadDumpEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration#auditEventsEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.audit.AuditEventRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.audit.AuditEventRepository (OnBeanCondition)
+
+   HttpTraceEndpointAutoConfiguration#httpTraceEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.trace.http.HttpTraceRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.trace.http.HttpTraceRepository (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-12-30 13:23:02.486  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:12, serverValue:119732}] to ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:02.487  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=112125000, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000012f, setVersion=6, topologyVersion=TopologyVersion{processId=63aa700c6e5facad1fd63bb4, counter=6}, lastWriteDate=Fri Dec 30 13:23:02 IST 2022, lastUpdateTimeNanos=1037642149085600}
+2022-12-30 13:23:02.488  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff000000000000012f from replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:02.488  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max set version to 6 from replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:02.489  INFO 22384 --- [cluster-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:02.495  INFO 22384 --- [cluster-rtt-ClusterId{value='63ae98dce16dca6f87696a9e', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:13, serverValue:119732}] to ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:11.999  INFO 22384 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-30 13:23:12.142 DEBUG 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : ===========> Tweet App Started <===========
+2022-12-30 13:23:12.201  INFO 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 11.0.15.1 on LAPTOP-MCA2PCCR with PID 22384 (C:\Users\Divyesh\Desktop\TweetAppComponent2\TweetAppBackend\TweetAppBackend\target\classes started by Divyesh in C:\Users\Divyesh\Desktop\TweetAppComponent2\TweetAppBackend\TweetAppBackend)
+2022-12-30 13:23:12.202 DEBUG 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-12-30 13:23:12.203  INFO 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2022-12-30 13:23:12.939  INFO 22384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-12-30 13:23:13.010  INFO 22384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 MongoDB repository interfaces.
+2022-12-30 13:23:13.616  INFO 22384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-12-30 13:23:13.618  INFO 22384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30 13:23:13.618  INFO 22384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-12-30 13:23:13.689  INFO 22384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30 13:23:13.695  INFO 22384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1485 ms
+2022-12-30 13:23:13.813 DEBUG 22384 --- [restartedMain] TFilter$$EnhancerBySpringCGLIB$$8524a8f0 : Filter 'JWTFilter' configured for use
+2022-12-30 13:23:14.877  INFO 22384 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=tweet.lynu3ly.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-mzenc9-shard-0'}
+2022-12-30 13:23:15.896  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 13:23:15.900  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 13:23:15.901  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-srv-tweet.lynu3ly.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017 to client view of cluster
+2022-12-30 13:23:15.919  INFO 22384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-30 13:23:16.004  INFO 22384 --- [cluster-rtt-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:15, serverValue:84618}] to ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:16.013  INFO 22384 --- [cluster-rtt-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:18, serverValue:87310}] to ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:16.051  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:16, serverValue:84618}] to ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:16.055  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:17, serverValue:87310}] to ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:16.056  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=114461500, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63aa72deb63d448566c96dac, counter=3}, lastWriteDate=Fri Dec 30 13:23:16 IST 2022, lastUpdateTimeNanos=1037655714170900}
+2022-12-30 13:23:16.057  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=118690700, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=63aa6cb2f979dad960aab8fa, counter=4}, lastWriteDate=Fri Dec 30 13:23:16 IST 2022, lastUpdateTimeNanos=1037655718473700}
+2022-12-30 13:23:16.069  INFO 22384 --- [cluster-rtt-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:19, serverValue:119819}] to ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:16.084  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:20, serverValue:119813}] to ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:16.086  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=133654300, setName='atlas-mzenc9-shard-0', canonicalAddress=ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017, hosts=[ac-9ajloal-shard-00-01.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-00.lynu3ly.mongodb.net:27017, ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000012f, setVersion=6, topologyVersion=TopologyVersion{processId=63aa700c6e5facad1fd63bb4, counter=6}, lastWriteDate=Fri Dec 30 13:23:16 IST 2022, lastUpdateTimeNanos=1037655747118400}
+2022-12-30 13:23:16.086  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff000000000000012f from replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:16.087  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max set version to 6 from replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:16.087  INFO 22384 --- [cluster-ClusterId{value='63ae98eae16dca6f87696a9f', description='null'}-ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary ac-9ajloal-shard-00-02.lynu3ly.mongodb.net:27017
+2022-12-30 13:23:16.195  INFO 22384 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-12-30 13:23:16.267  INFO 22384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-30 13:23:16.355  INFO 22384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-12-30 13:23:16.356  INFO 22384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-12-30 13:23:16.357  INFO 22384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-12-30 13:23:16.361  INFO 22384 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-12-30 13:23:16.426  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-12-30 13:23:16.430  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-12-30 13:23:16.432  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-12-30 13:23:16.433  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-12-30 13:23:16.435  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-12-30 13:23:16.436  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-12-30 13:23:16.442  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-12-30 13:23:16.444  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-12-30 13:23:16.445  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-12-30 13:23:16.447  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-12-30 13:23:16.449  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-12-30 13:23:16.451  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-12-30 13:23:16.460  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-12-30 13:23:16.462  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-12-30 13:23:16.464  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-12-30 13:23:16.467  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-12-30 13:23:16.470  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-12-30 13:23:16.476  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-12-30 13:23:16.478  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-12-30 13:23:16.481  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-12-30 13:23:16.483  INFO 22384 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2022-12-30 13:23:16.646  INFO 22384 --- [restartedMain] com.tweetapp.api.TweetApplication        : Started TweetApplication in 4.497 seconds (JVM running for 2039.896)
+2022-12-30 13:23:16.650  INFO 22384 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-02 19:52:34.032  INFO 3244 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 17.0.9 on vinay with PID 3244 (C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend\target\classes started by midhu in C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend)
+2023-12-02 19:52:34.035 DEBUG 3244 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2023-12-02 19:52:34.037  INFO 3244 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2023-12-02 19:52:34.152  INFO 3244 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\midhu\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/midhu/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2023-12-02 19:52:34.152  INFO 3244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-02 19:52:34.153  INFO 3244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-02 19:52:36.045  INFO 3244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 19:52:36.049  INFO 3244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-02 19:52:36.207  INFO 3244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 2 JPA repository interfaces.
+2023-12-02 19:52:36.224  INFO 3244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 19:52:36.224  INFO 3244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-12-02 19:52:36.241  WARN 3244 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userRepository' defined in com.tweetapp.api.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot register bean definition [Root bean: class [org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.tweetapp.api.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration] for bean 'userRepository': There is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.tweetapp.api.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration] bound.
+2023-12-02 19:52:36.268  INFO 3244 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-02 19:52:36.307 ERROR 3244 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userRepository', defined in com.tweetapp.api.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in com.tweetapp.api.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-12-02 20:08:22.880  INFO 8104 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 17.0.9 on vinay with PID 8104 (C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend\target\classes started by midhu in C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend)
+2023-12-02 20:08:22.882 DEBUG 8104 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2023-12-02 20:08:22.884  INFO 8104 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2023-12-02 20:08:22.983  INFO 8104 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\midhu\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/midhu/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2023-12-02 20:08:22.983  INFO 8104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-02 20:08:22.983  INFO 8104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-02 20:08:24.758  INFO 8104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 20:08:24.763  INFO 8104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-02 20:08:24.886  INFO 8104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 2 JPA repository interfaces.
+2023-12-02 20:08:24.900  INFO 8104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 20:08:24.900  INFO 8104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-12-02 20:08:24.920  WARN 8104 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userRepository' defined in com.tweetapp.api.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot register bean definition [Root bean: class [org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.tweetapp.api.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration] for bean 'userRepository': There is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.tweetapp.api.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration] bound.
+2023-12-02 20:08:24.939  INFO 8104 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-02 20:08:24.983 ERROR 8104 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userRepository', defined in com.tweetapp.api.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in com.tweetapp.api.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-12-02 20:20:43.426  INFO 22420 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 17.0.9 on vinay with PID 22420 (C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend\target\classes started by midhu in C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend)
+2023-12-02 20:20:43.428 DEBUG 22420 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2023-12-02 20:20:43.429  INFO 22420 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2023-12-02 20:20:43.533  INFO 22420 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\midhu\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/midhu/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2023-12-02 20:20:43.534  INFO 22420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-02 20:20:43.535  INFO 22420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-02 20:20:45.363  INFO 22420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 20:20:45.369  INFO 22420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-02 20:20:45.491  INFO 22420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 2 JPA repository interfaces.
+2023-12-02 20:20:45.500  INFO 22420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 20:20:45.501  INFO 22420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-12-02 20:20:45.518  WARN 22420 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userRepository' defined in com.tweetapp.api.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot register bean definition [Root bean: class [org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.tweetapp.api.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration] for bean 'userRepository': There is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.tweetapp.api.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration] bound.
+2023-12-02 20:20:45.542  INFO 22420 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-02 20:20:45.573 ERROR 22420 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userRepository', defined in com.tweetapp.api.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in com.tweetapp.api.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-12-02 20:21:11.982  INFO 3248 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 17.0.9 on vinay with PID 3248 (C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend\target\classes started by midhu in C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend)
+2023-12-02 20:21:11.984 DEBUG 3248 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2023-12-02 20:21:11.984  INFO 3248 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2023-12-02 20:21:12.097  INFO 3248 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\midhu\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/midhu/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2023-12-02 20:21:12.098  INFO 3248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-02 20:21:12.098  INFO 3248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-02 20:21:13.936  INFO 3248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 20:21:13.940  INFO 3248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-02 20:21:14.069  INFO 3248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 2 JPA repository interfaces.
+2023-12-02 20:21:14.083  INFO 3248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 20:21:14.084  INFO 3248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-12-02 20:21:14.099  WARN 3248 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'tweetRepository' defined in com.tweetapp.api.repository.TweetRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot register bean definition [Root bean: class [org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.tweetapp.api.repository.TweetRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration] for bean 'tweetRepository': There is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.tweetapp.api.repository.TweetRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration] bound.
+2023-12-02 20:21:14.123  INFO 3248 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-02 20:21:14.159 ERROR 3248 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'tweetRepository', defined in com.tweetapp.api.repository.TweetRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in com.tweetapp.api.repository.TweetRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-12-02 20:22:25.336  INFO 26240 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 17.0.9 on vinay with PID 26240 (C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend\target\classes started by midhu in C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend)
+2023-12-02 20:22:25.338 DEBUG 26240 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2023-12-02 20:22:25.341  INFO 26240 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2023-12-02 20:22:25.452  INFO 26240 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\midhu\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/midhu/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2023-12-02 20:22:25.453  INFO 26240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-02 20:22:25.453  INFO 26240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-02 20:22:27.381  INFO 26240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 20:22:27.385  INFO 26240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-02 20:22:27.519  INFO 26240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 2 JPA repository interfaces.
+2023-12-02 20:22:27.535  INFO 26240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 20:22:27.537  INFO 26240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-12-02 20:22:27.554  INFO 26240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 MongoDB repository interfaces.
+2023-12-02 20:22:29.113  INFO 26240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-12-02 20:22:29.130  INFO 26240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-02 20:22:29.131  INFO 26240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-12-02 20:22:29.269  INFO 26240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-02 20:22:29.270  INFO 26240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3816 ms
+2023-12-02 20:22:29.659 DEBUG 26240 --- [restartedMain] TFilter$$EnhancerBySpringCGLIB$$91db8779 : Filter 'JWTFilter' configured for use
+2023-12-02 20:22:30.025  INFO 26240 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 20:22:30.134  INFO 26240 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-12-02 20:22:30.364  INFO 26240 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-02 20:22:30.673  WARN 26240 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+java.sql.SQLException: Invalid Oracle URL specified
+	at oracle.jdbc.driver.PhysicalConnection.parseUrl(PhysicalConnection.java:1335) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.readConnectionProperties(PhysicalConnection.java:1035) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:747) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:498) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:56) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:747) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:562) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.tweetapp.api.TweetApplication.main(TweetApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+
+2023-12-02 20:22:30.705  INFO 26240 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-12-02 20:22:31.691  WARN 26240 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 17067, SQLState: 99999
+2023-12-02 20:22:31.692 ERROR 26240 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Invalid Oracle URL specified
+2023-12-02 20:22:31.707 ERROR 26240 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2023-12-02 20:22:31.716  WARN 26240 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2023-12-02 20:22:31.726  INFO 26240 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-02 20:22:31.747  INFO 26240 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-02 20:22:31.773 ERROR 26240 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.tweetapp.api.TweetApplication.main(TweetApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 22 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:155) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.6.jar:5.3.6]
+	... 26 common frames omitted
+Caused by: java.sql.SQLException: Invalid Oracle URL specified
+	at oracle.jdbc.driver.PhysicalConnection.parseUrl(PhysicalConnection.java:1335) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.readConnectionProperties(PhysicalConnection.java:1035) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:747) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:498) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:56) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:747) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:562) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	... 40 common frames omitted
+
+2023-12-02 20:23:45.037  INFO 8476 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 17.0.9 on vinay with PID 8476 (C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend\target\classes started by midhu in C:\TweetAppComponent2\TweetAppBackend\TweetAppBackend)
+2023-12-02 20:23:45.040 DEBUG 8476 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2023-12-02 20:23:45.044  INFO 8476 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2023-12-02 20:23:45.141  INFO 8476 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\midhu\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/midhu/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2023-12-02 20:23:45.142  INFO 8476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-02 20:23:45.142  INFO 8476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-02 20:23:46.986  INFO 8476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 20:23:46.990  INFO 8476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-02 20:23:47.117  INFO 8476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 2 JPA repository interfaces.
+2023-12-02 20:23:47.129  INFO 8476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 20:23:47.129  INFO 8476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-12-02 20:23:47.146  INFO 8476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 MongoDB repository interfaces.
+2023-12-02 20:23:48.580  INFO 8476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-12-02 20:23:48.597  INFO 8476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-02 20:23:48.597  INFO 8476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-12-02 20:23:48.716  INFO 8476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-02 20:23:48.716  INFO 8476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3572 ms
+2023-12-02 20:23:49.095 DEBUG 8476 --- [restartedMain] TFilter$$EnhancerBySpringCGLIB$$8a4d6db5 : Filter 'JWTFilter' configured for use
+2023-12-02 20:23:49.453  INFO 8476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 20:23:49.553  INFO 8476 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-12-02 20:23:49.808  INFO 8476 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-02 20:23:50.139  WARN 8476 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+java.sql.SQLException: Invalid Oracle URL specified
+	at oracle.jdbc.driver.PhysicalConnection.parseUrl(PhysicalConnection.java:1335) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.readConnectionProperties(PhysicalConnection.java:1035) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:747) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:498) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:56) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:747) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:562) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.tweetapp.api.TweetApplication.main(TweetApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+
+2023-12-02 20:23:50.169  INFO 8476 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-12-02 20:23:51.039  WARN 8476 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 17067, SQLState: 99999
+2023-12-02 20:23:51.041 ERROR 8476 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Invalid Oracle URL specified
+2023-12-02 20:23:51.048 ERROR 8476 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2023-12-02 20:23:51.048  WARN 8476 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2023-12-02 20:23:51.052  INFO 8476 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-02 20:23:51.074  INFO 8476 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-02 20:23:51.097 ERROR 8476 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.tweetapp.api.TweetApplication.main(TweetApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 22 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:155) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.6.jar:5.3.6]
+	... 26 common frames omitted
+Caused by: java.sql.SQLException: Invalid Oracle URL specified
+	at oracle.jdbc.driver.PhysicalConnection.parseUrl(PhysicalConnection.java:1335) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.readConnectionProperties(PhysicalConnection.java:1035) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:747) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:498) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:56) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:747) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:562) ~[ojdbc8-19.8.0.0.jar:19.8.0.0.0]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.3.6.jar:5.3.6]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	... 40 common frames omitted
+
